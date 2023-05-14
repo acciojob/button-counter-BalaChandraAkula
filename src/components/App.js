@@ -6,18 +6,25 @@ import { useState } from 'react';
 
 const App = () => {
   
-  let [count,setCount] = useState(0);
+//   let [count,setCount] = useState(0);
   
-  function countClicks(){
-     setCount(count+1)
-  }
-  return(
+//   function countClicks(){
+//      setCount(count+1)
+//   }
+//   return(
     
-        <div>
-          <p>Button Clicked {count} times</p>
-          <button onClick={countClicks}>Click me</button>
-        </div>
+//         <div>
+//           <p>Button Clicked {count} times</p>
+//           <button onClick={countClicks}>Click me</button>
+//         </div>
     
+//   )
+  let [counter, setCounter]=  useState(0);
+  return (
+    <div>
+      <p>Button clicked {counter} times</p>
+       <button onClick={()=>{setCounter(counter+1)}}>Click me</button>
+    </div>
   )
 }
 
